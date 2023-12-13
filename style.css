@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Preahvihear&display=swap');
+
+/* variaveis */
+:root {
+	--bordo:#401309;
+	--bege-clarinho:#F2D16D;
+	--salmao:#F26D3D;
+	--bege:#F29C50;
+
+	--fonte-principal:'Preahvihear', sans-serif;
+	--fonte-segundaria:'Indie Flower', cursive;
+}
+
+body {
+	font-family: var(--fonte-principal);
+}
+
+/* custom barra navegação */
+#barra-nav {
+	background-color: var(--bordo);
+	padding: 1rem 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;z-index: 1000;
+}
+
+/* lista nao ordenada da barra de navegação */
+#barra-nav ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	padding-right: 5rem;
+}
+
+/* itens da lista da barra de navegação */
+#barra-nav li {
+	display: inline-block;
+	margin-right: 10px;
+	font-weight: 600;
+	padding: 5px 2px;
+
+}
+
+#barra-nav .nav-link:hover {
+	color: var(--salmao);
+	text-decoration: none;
+}
+
+#logo img {
+	display: inline-block;
+	position: relative;
+	left: 5rem;
+	width: 38px;
+}
