@@ -13,6 +13,7 @@
 
 body {
 	font-family: var(--fonte-principal);
+	background-color: var(--bege-clarinho);
 }
 
 /* custom barra navegação */
@@ -42,6 +43,7 @@ body {
 	margin-right: 10px;
 	font-weight: 600;
 	padding: 5px 2px;
+	color: var(--bege-clarinho);
 
 }
 
@@ -55,4 +57,89 @@ body {
 	position: relative;
 	left: 5rem;
 	width: 38px;
+}
+
+/* customização da hero image */
+.hero-texto {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.bgimage {
+	height: 100vh;
+	position: relative;
+	background: url("img/hero.jpg");
+	background-size: cover;
+}
+
+.hero-titulo {
+	font-size: 4.5rem;
+	font-family: var(--fonte-segundaria);
+}
+
+.hero-sub {
+	font-size: 2rem;
+}
+
+/* seção posts 
+.titulo-post {
+	position: absolute;
+	top: -2%;
+	left: 50%;
+} */
+
+/* seção corpo page */
+#post,#criar, #sobre {
+	margin: 5rem;
+	background-color: var(--salmao);
+	border-radius: 10px;
+	padding: 2rem;
+}
+
+/* seção form criar novo post */
+#post-form {
+	display: flex;
+	flex-direction: column;
+}
+
+#post-form input {
+	width: 100%;
+}
+
+#post-form textarea {
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 10rem;
+}
+
+#post-form button {
+ 	width: 30%;
+ 	position: relative;
+ 	left: 50%;
+ 	translate: -50%;
+}
+
+.dev {
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+}
+
+.img-dev {
+	width: 100%;
+	padding: 1rem 0;
+}
+
+.dev p {
+	padding: 1rem;
+}
+
+.icone-contato {
+	font-size:  32px;
+	padding-bottom: 1rem;
+	color: var(--bordo);
 }
